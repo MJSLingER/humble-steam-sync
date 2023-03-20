@@ -89,7 +89,7 @@ form.addEventListener('submit', e => {
 
   if (!steamId) return;
 
-  fetch(`http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=XXXXXXXXXXXXXXXXXXXXXXX&steamids=76561198066277584`)
+  fetch(`http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=96A7863E73D25D0309EF4969384F619E&steamids=76561198066277584`)
     .then(r => r.json())
     .then(profile => {
       if (!profile) {
