@@ -89,7 +89,7 @@ form.addEventListener('submit', e => {
 
   if (!steamId) return;
 
-  fetch(`https://humble-steam-sync.herokuapp.com/${steamId}/profile`)
+  fetch(`http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=XXXXXXXXXXXXXXXXXXXXXXX&steamids=76561198066277584`)
     .then(r => r.json())
     .then(profile => {
       if (!profile) {
